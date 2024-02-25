@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 0%, 86%);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 45%;
+    height: auto;
+}
+
+.main-box{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 120px 20px;
+
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 30px;
+    width: 100%;
+}
+
+label{
+    font-size: 13px;
+    color: hsl(0, 1%, 44%);
+}
+
+
+input{
+    padding: 15px 10px;
+    width: 110px;
+    border: 1px solid  hsl(0, 1%, 44%);
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+input:hover{
+    border: 1px solid   hsl(259, 100%, 65%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+/********** border-icon ***********/
+
+.border-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border{
+    height: 1px;
+    background-color:  hsl(0, 1%, 44%);
+    width: 100%;
+}
+
+.icon{
+    cursor: pointer;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    width: 55px;
+    padding: 10px;
+    transition: .2s ease-in-out;
+}
+
+.icon:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+.text span{
+    font-style: italic;
+    font-size:4.5rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    
+}
+
+.numOfyear, .numOfmonth, .numOfday{
+    color:  hsl(259, 100%, 65%) !important;
+}
+
+
+@media  screen and (max-width:400px) {
+    .content{
+        width: 96%;
+        height: auto;
+    }
+
+    .text span{
+        font-style: italic;
+        font-size:3rem;
+        font-weight: 600;
+        color: hsl(0, 0%, 8%);
+        
+    }
+
+    input{
+        padding: 10px 8px;
+        width: 70px;
+        border: 1px solid  hsl(0, 1%, 44%);
+        background-color:  hsl(0, 0%, 100%);
+        border-radius: 5px;
+        outline: none;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+}
